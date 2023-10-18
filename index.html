@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#5cb85c">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="icon" href="icons/palomas.ico">
+    <title>Aldair´s Cines 2</title>
+</head>
+<body class="bg-dark">
+    <center>
+        <img src="logo.png" class="img-fluid" width="200px" alt="">
+    </center>
+    <br>
+    <form class="text-white text-primary" id="ventas">
+        <h3 for="nombre" class="form-label">Nombre</h3>
+        <input class="form-control" type="text" id="nombre" required>
+        
+        <h3 for="correo" class="form-label">Correo</h3>
+        <input class="form-control" type="email" id="correo" required>
+        
+        <h3 for="opciones" class="form-label">Selecciona Película</h3>
+        <select name="opciones" id="opciones" class="form-control" required>
+            <option value=""></option>
+            <option value="Cars">Cars</option>
+            <option value="Meg">Meg</option>
+            <option value="Potter">Harry Potter y el cáliz de fuego</option>
+            <option value="conjuro">El Conjuro 2</option>
+            <option value="Monja">La Monja</option>
+        </select>
+        <br>
+        <img src="portada.jpeg" width="200px" id="portada" alt="">
+        
+        <h3 for="Boletos" class="form-label">Número de Boletos</h3>
+        <input type="number" id="Boletos" class="form-control" required>
+        
+        <br>
+        <button class="btn btn-success mx-auto" id="btnEnviar" style="width: 100%;">Enviar</button>
+    </form>
+
+    <hr>
+
+    <div class="container-fluid">
+        <table id="tablaVentas" class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Película</th>
+                    <th>Boletos</th>
+                    <th>Imagen</th>
+                    <th>Total a Pagar</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <script src="appCine.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
