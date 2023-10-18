@@ -15,35 +15,38 @@
         <img src="logo.png" class="img-fluid" width="200px" alt="">
     </center>
     <br>
-    <form class="text-white text-primary" id="ventas">
-        <h3 for="nombre" class="form-label">Nombre</h3>
-        <input class="form-control" type="text" id="nombre" required>
-        
-        <h3 for="correo" class="form-label">Correo</h3>
-        <input class="form-control" type="email" id="correo" required>
-        
-        <h3 for="opciones" class="form-label">Selecciona Película</h3>
-        <select name="opciones" id="opciones" class="form-control" required>
-            <option value=""></option>
-            <option value="Cars">Cars</option>
-            <option value="Meg">Meg</option>
-            <option value="Potter">Harry Potter y el cáliz de fuego</option>
-            <option value="conjuro">El Conjuro 2</option>
-            <option value="Monja">La Monja</option>
-        </select>
-        <br>
-        <img src="portada.jpeg" width="200px" id="portada" alt="">
-        
-        <h3 for="Boletos" class="form-label">Número de Boletos</h3>
-        <input type="number" id="Boletos" class="form-control" required>
-        
-        <br>
-        <button class="btn btn-success mx-auto" id="btnEnviar" style="width: 100%;">Enviar</button>
-    </form>
+    
+    <div class="container-fluid">
+        <form class="text-white text-primary" id="ventas">
+            <h3 for="nombre" class="form-label">Nombre</h3>
+            <input class="form-control" type="text" id="nombre" required>
+            
+            <h3 for="correo" class="form-label">Correo</h3>
+            <input class="form-control" type="email" id="correo" required>
+            
+            <h3 for="opciones" class="form-label">Selecciona Película</h3>
+            <select name="opciones" id="opciones" class="form-control" required>
+                <option value=""></option>
+                <option value="Cars">Cars</option>
+                <option value="Meg">Meg</option>
+                <option value="Potter">Harry Potter y el cáliz de fuego</option>
+                <option value="conjuro">El Conjuro 2</option>
+                <option value="Monja">La Monja</option>
+            </select>
+            <br>
+            <img src="portada.jpeg" width="200px" id="portada" alt="">
+            
+            <h3 for="Boletos" class="form-label">Número de Boletos</h3>
+            <input type="number" id="Boletos" class="form-control" required>
+            
+            <br>
+            <button class="btn btn-success mx-auto" id="btnEnviar" style="width: 100%;">Enviar</button>
+        </form>
+    </div>
 
     <hr>
 
-    <div class="container-fluid">
+    <div class="table-responsive">
         <table id="tablaVentas" class="table table-striped text-white" style="width: 100%;">
             <thead>
                 <tr>

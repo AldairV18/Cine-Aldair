@@ -102,7 +102,11 @@ let filaEditando = null;
                 eliminarBtn.className = "btn btn-danger";
                 eliminarBtn.onclick = function() {
                     // Eliminar la fila
-                    newRow.remove();
+                    if (confirm("¿Estás seguro de que quieres eliminar esta película?")) {
+                        // Código para eliminar la película
+                        newRow.remove();
+                      } 
+                    
                 };
         
                 cell7.appendChild(editarBtn);
