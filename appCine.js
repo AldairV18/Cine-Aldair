@@ -34,6 +34,11 @@ let filaEditando = null;
             const correo = document.getElementById("correo").value;
             const pelicula = document.getElementById("opciones").value;
             const boletos = parseInt(document.getElementById("Boletos").value);
+
+            if (!correo.includes("@")) {
+                alert("El correo electrónico debe contener '@'.");
+                return;
+            }
         
             if (nombre && correo && pelicula && !isNaN(boletos) && boletos > 0) {
                 const tablaVentas = document.getElementById("tablaVentas").getElementsByTagName('tbody')[0];
